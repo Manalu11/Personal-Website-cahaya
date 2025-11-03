@@ -1,18 +1,29 @@
 @config "../../tailwind.config.ts";
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @layer base {
-	html {
-		scroll-behavior: smooth;
-	}
-	body {
-		background-color: var(--color-zinc-50);
-		@variant dark {
-			background-color: var(--color-zinc-950);
-		}
-	}
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-zinc-50);
+    @variant dark {
+      background-color: var(--color-zinc-950);
+    }
+  }
 }
 
 body {
-	font-family: var(--font-sans);
+  font-family: var(--font-sans);
+}
+/* tema pink halus */
+.pink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 228 236 / var(--tw-bg-opacity));
+  color: #4b2c3e;
+}
+
+.pink body {
+  background-color: #ffeef5;
+  color: #4b2c3e;
 }
